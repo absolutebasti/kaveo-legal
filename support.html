@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support · Kaveo</title>
+<style>
+  :root {
+    --bg: #FAFAF7;
+    --card: #FFFFFF;
+    --border: #E5E7EB;
+    --heading: #0D1B2A;
+    --body: #475569;
+    --accent: #C19A6B;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--body);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.65;
+    font-size: 17px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    max-width: 720px;
+    margin: 32px auto;
+    padding: 28px;
+  }
+  .eyebrow {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--accent);
+    text-decoration: none;
+    margin-bottom: 12px;
+  }
+  .eyebrow:hover,
+  .eyebrow:focus {
+    text-decoration: underline;
+  }
+  h1, h2 {
+    color: var(--heading);
+    line-height: 1.3;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 0 0 0.6em;
+  }
+  h2 {
+    font-size: 1.35rem;
+    margin: 1.8em 0 0.5em;
+  }
+  p {
+    margin: 0 0 1em;
+  }
+  strong {
+    color: var(--heading);
+  }
+  a {
+    color: var(--heading);
+    text-decoration: underline;
+  }
+  ul {
+    margin: 0 0 1em;
+    padding-left: 1.4em;
+  }
+  li {
+    margin-bottom: 0.4em;
+  }
+  .faq {
+    margin-bottom: 1.4em;
+  }
+  .faq p:first-child {
+    margin-bottom: 0.3em;
+  }
+  footer {
+    margin-top: 2.5em;
+    padding-top: 1.4em;
+    border-top: 1px solid var(--border);
+    font-size: 0.875rem;
+    color: var(--body);
+  }
+  footer a {
+    color: var(--body);
+  }
+  footer p {
+    margin: 0 0 0.5em;
+  }
+  @media (max-width: 600px) {
+    body {
+      font-size: 16px;
+    }
+    .card {
+      margin: 16px;
+      padding: 20px;
+      border-radius: 12px;
+    }
+    h1 {
+      font-size: 1.6rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <main class="card">
+    <a class="eyebrow" href="./index.html">KAVEO</a>
+    <h1>Support</h1>
+
+    <p>Questions, bug reports, or feedback — we read every message and reply within 48 hours on business days.</p>
+
+    <h2>Email us</h2>
+    <p>Write to <a href="mailto:hello@torchtechnology.de">hello@torchtechnology.de</a> with as much detail as you can — what you tried, what you expected, what happened. A screenshot helps if it's a visual bug.</p>
+
+    <h2>Common questions</h2>
+
+    <div class="faq">
+      <p><strong>How do I add an item to my wardrobe?</strong></p>
+      <p>Tap <strong>Capture</strong> at the bottom of the screen, point your camera at the item, and shoot. Kaveo removes the background, tags the item automatically, and adds it to your wardrobe. You can also import from your photo library or paste a product URL.</p>
+    </div>
+
+    <div class="faq">
+      <p><strong>How do I delete my account?</strong></p>
+      <p>Open <strong>Settings → Account → Delete account</strong>. This permanently removes all your photos, items, outfits, wishlist, and profile data. There is no recovery — make sure to export anything you want to keep first.</p>
+    </div>
+
+    <div class="faq">
+      <p><strong>I forgot my password — how do I reset it?</strong></p>
+      <p>On the sign-in screen tap <strong>Forgot password?</strong> and enter your email. We'll send you a reset link that's valid for one hour.</p>
+    </div>
+
+    <div class="faq">
+      <p><strong>An item came out wrong — bad tags or background still showing.</strong></p>
+      <p>Open the item, tap the edit icon, and correct the category, color, or notes manually. If the background wasn't removed, retake the photo against a plain surface with even light — that gives Kaveo the best chance.</p>
+    </div>
+
+    <div class="faq">
+      <p><strong>Bulk-upload got stuck or some items never finished processing.</strong></p>
+      <p>Pull-to-refresh on the wardrobe screen, or tap <strong>Resume processing</strong> if you see that button near the top. If items still don't finish, email us with your account email and we'll investigate.</p>
+    </div>
+
+    <div class="faq">
+      <p><strong>Do my photos stay private?</strong></p>
+      <p>Yes. Photos are stored in your private account on Supabase (EU region) and are only visible to you. We never share or sell them. Full details are in our <a href="./privacy.html">Privacy Policy</a>.</p>
+    </div>
+
+    <div class="faq">
+      <p><strong>Is Kaveo free?</strong></p>
+      <p>Kaveo is free during the beta. We'll introduce an optional paid tier later for power users — existing wardrobes will not be locked behind it.</p>
+    </div>
+
+    <h2>Report a bug</h2>
+    <p>If something broke, send us a quick note at <a href="mailto:hello@torchtechnology.de?subject=Kaveo%20bug%20report">hello@torchtechnology.de</a> with:</p>
+    <ul>
+      <li>The device and OS you're using (e.g. iPhone 15, iOS 18.2)</li>
+      <li>What you were doing when it happened</li>
+      <li>What you expected vs. what actually happened</li>
+      <li>A screenshot or screen recording if you can</li>
+    </ul>
+
+    <h2>Legal &amp; policies</h2>
+    <ul>
+      <li><a href="./privacy.html">Privacy Policy</a> — what we collect and why</li>
+      <li><a href="./terms.html">Terms of Service</a> — rules for using the app</li>
+    </ul>
+
+    <p>Kaveo is operated by Torch Technology. We're a small team — replies come from a real human, usually within a day.</p>
+
+    <footer>
+      <p><a href="./privacy.html">Privacy Policy</a> · <a href="./terms.html">Terms of Service</a> · <a href="./support.html">Support</a> · <a href="mailto:hello@torchtechnology.de">hello@torchtechnology.de</a></p>
+      <p>Operated by Torch Technology</p>
+    </footer>
+  </main>
+</body>
+</html>

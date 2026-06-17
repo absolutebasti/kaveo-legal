@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy · Kaveo</title>
+<style>
+  :root {
+    --bg: #FAFAF7;
+    --card: #FFFFFF;
+    --border: #E5E7EB;
+    --heading: #0D1B2A;
+    --body: #475569;
+    --accent: #C19A6B;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--body);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.65;
+    font-size: 17px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    max-width: 720px;
+    margin: 32px auto;
+    padding: 28px;
+  }
+  .eyebrow {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--accent);
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+  }
+  .eyebrow:hover,
+  .eyebrow:focus { text-decoration: underline; }
+  h1 {
+    color: var(--heading);
+    font-size: 2rem;
+    line-height: 1.25;
+    margin: 0.2em 0 0.4em;
+  }
+  h2 {
+    color: var(--heading);
+    font-size: 1.3rem;
+    line-height: 1.3;
+    margin: 1.8em 0 0.5em;
+  }
+  p { margin: 0.8em 0; }
+  ul { margin: 0.8em 0; padding-left: 1.4em; }
+  li { margin: 0.4em 0; }
+  strong { color: var(--heading); }
+  a { color: var(--heading); text-decoration: underline; }
+  a:hover,
+  a:focus { text-decoration: none; }
+  .updated {
+    font-size: 0.95rem;
+    color: var(--body);
+    margin-top: 0;
+  }
+  address {
+    font-style: normal;
+    margin: 0.8em 0;
+  }
+  footer {
+    margin-top: 2.5em;
+    padding-top: 1.5em;
+    border-top: 1px solid var(--border);
+    font-size: 0.9rem;
+    color: var(--body);
+  }
+  footer a { color: var(--body); }
+  footer p { margin: 0.4em 0; }
+  @media (max-width: 600px) {
+    body { font-size: 16px; }
+    .card {
+      margin: 16px;
+      padding: 18px;
+      border-radius: 12px;
+    }
+    h1 { font-size: 1.6rem; }
+    h2 { font-size: 1.15rem; }
+  }
+</style>
+</head>
+<body>
+<main class="card">
+  <a class="eyebrow" href="./index.html">KAVEO</a>
+  <h1>Privacy Policy</h1>
+
+  <p class="updated">Last updated 2026-05-26</p>
+
+  <p>Kaveo is a digital-wardrobe app that helps you photograph, organize, and plan outfits from the clothes you already own. This policy explains what personal data we collect, why, and what you can do about it. We follow GDPR (EU Regulation 2016/679); German users are also protected by the BDSG and TTDSG.</p>
+
+  <p>If anything below is unclear, write us at <a href="mailto:hello@torchtechnology.de">hello@torchtechnology.de</a>. We'll respond within 30 days.</p>
+
+  <h2>1. Who we are</h2>
+
+  <p>Kaveo is operated by <strong>Torch Technology</strong>, a registered Gewerbe in Germany. Postal contact:</p>
+
+  <address>
+    Torch Technology<br>
+    [Adresse einsetzen sobald Gewerbeanmeldung vorliegt]<br>
+    Deutschland
+  </address>
+
+  <h2>2. What data we collect</h2>
+
+  <ul>
+    <li><strong>Account data:</strong> email address, first name, last name, gender preset (used to seed defaults; never used to restrict what you can add).</li>
+    <li><strong>Wardrobe photos:</strong> the original photos you upload, plus the background-removed versions we generate. These are stored privately in our database — only you can see them.</li>
+    <li><strong>Item metadata:</strong> AI-generated tags (category, material, color, pattern, formality, warmth), brand, size, purchase date, and price if you provide them.</li>
+    <li><strong>Outfits + wear history:</strong> outfits you compose, dates you mark items as worn.</li>
+    <li><strong>Wishlist:</strong> URLs you save, plus the title, price, and image we extract from those URLs.</li>
+    <li><strong>Location:</strong> coarse location (city level) when you grant permission, used only to fetch today's weather forecast. We do not store your location.</li>
+    <li><strong>Technical data:</strong> session cookies for authentication, error reports (if Sentry is enabled in a future release).</li>
+  </ul>
+
+  <h2>3. Why we process it (legal basis)</h2>
+
+  <ul>
+    <li><strong>To provide the service</strong> — Art. 6(1)(b) GDPR (contract). Without account data and your photos, there's no wardrobe to look at.</li>
+    <li><strong>AI tagging</strong> — Art. 6(1)(b) GDPR. We send uploaded photos to vision models (Replicate, Anthropic via OpenRouter) for background removal and clothing tagging. These providers do not retain your images beyond the request.</li>
+    <li><strong>Affiliate-link rewriting</strong> — Art. 6(1)(f) GDPR (legitimate interest in funding the service). We rewrite outbound merchant links through partner networks (Awin, Skimlinks, Amazon Associates) when you click "Buy". The merchant places a cookie on their own domain; Kaveo never sets a tracking cookie on yours.</li>
+    <li><strong>Account security</strong> — Art. 6(1)(c) GDPR (legal obligation). Session cookies, password hashing.</li>
+  </ul>
+
+  <h2>4. Sub-processors</h2>
+
+  <p>Kaveo uses these third-party services to deliver the product. Each is contractually bound by data-processing agreements (Art. 28 GDPR):</p>
+
+  <ul>
+    <li><strong>Supabase</strong> (Ireland) — database, auth, storage. EU region.</li>
+    <li><strong>Replicate</strong> (USA) — background removal. Photos forwarded for processing; not retained.</li>
+    <li><strong>Anthropic via OpenRouter</strong> (USA) — vision tagging. Photos sent inline; Anthropic does not train on API data.</li>
+    <li><strong>Microlink</strong> (Spain) — wishlist URL scraping. We never send your photos here, only the merchant URLs you paste.</li>
+  </ul>
+
+  <h2>5. Where your data lives</h2>
+
+  <p>Account data, items, outfits, and wishlist rows live in Supabase's EU region. Image storage uses Supabase Storage (also EU). Vision-API providers (Replicate, Anthropic) process photos in the US for a few seconds per request; this is governed by Standard Contractual Clauses and explicit consent through your use of the service.</p>
+
+  <h2>6. Retention</h2>
+
+  <p>We keep your data as long as your account exists. When you delete your account (Settings → Danger zone → Delete account), every row and every photo is removed within 24 hours. Backups are purged on a 30-day rolling schedule.</p>
+
+  <h2>7. Your rights</h2>
+
+  <p>Under GDPR Art. 15–22 you have the right to:</p>
+
+  <ul>
+    <li>Access a copy of your data (Art. 15)</li>
+    <li>Correct inaccurate data (Art. 16)</li>
+    <li>Have your data deleted (Art. 17) — see §6</li>
+    <li>Restrict processing (Art. 18)</li>
+    <li>Receive your data in a portable format (Art. 20)</li>
+    <li>Object to processing based on legitimate interest (Art. 21)</li>
+  </ul>
+
+  <p>Exercise any of these by emailing <a href="mailto:hello@torchtechnology.de">hello@torchtechnology.de</a>. You also have the right to lodge a complaint with your supervisory authority — in Germany, the data-protection authority of your state (a list is at <a href="https://www.bfdi.bund.de/SharedDocs/Adressen/Anschriften_Links/AnschriftenLinks-DatenschutzbehoerdenLaender.html">bfdi.bund.de</a>).</p>
+
+  <h2>8. Cookies + tracking</h2>
+
+  <p>Kaveo sets exactly one first-party cookie used for authentication (Supabase session). We do not use third-party advertising cookies. Affiliate-link tracking is set by the merchant on their own domain after you click an outbound "Buy" button; Kaveo never injects affiliate tags into links you paste without telling you.</p>
+
+  <h2>9. Children</h2>
+
+  <p>Kaveo is not intended for users under 16. If we learn we have collected data from a child under 16 without parental consent, we will delete it.</p>
+
+  <h2>10. Changes to this policy</h2>
+
+  <p>We'll publish material changes at this URL and notify account holders by email at least 14 days before they take effect. The "Last updated" date at the top reflects the current version.</p>
+
+  <h2>11. Contact</h2>
+
+  <p>For privacy questions or to exercise your rights, write to <a href="mailto:hello@torchtechnology.de">hello@torchtechnology.de</a>.</p>
+
+  <p>See also our <a href="./terms.html">Terms of Service</a>.</p>
+
+  <footer>
+    <p><a href="./privacy.html">Privacy</a> · <a href="./terms.html">Terms</a> · <a href="./support.html">Support</a> · <a href="mailto:hello@torchtechnology.de">hello@torchtechnology.de</a></p>
+    <p>Operated by Torch Technology</p>
+  </footer>
+</main>
+</body>
+</html>
